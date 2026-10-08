@@ -4,9 +4,9 @@ import { useState } from 'react'
 import { ArrowDown, ArrowUpRight, Menu, RotateCcw, Sparkles, X } from 'lucide-react'
 
 const jewelry = [
-  ['Victorian jewelry casket', 'Victorian collection · circa 1890', 'A velvet-lined keepsake box with gilt filigree earrings.', '/yessy-hero.png'],
-  ['Violet eau de parfum', 'Victorian collection · circa 1900', 'A jewel-like amber bottle dressed with violets and a satin bow.', '/yessy-stickers.png'],
-  ['Rose cameo portrait', 'Victorian collection · circa 1885', 'An ivory cameo framed in warm gilt and surrounded by crimson roses.', '/yessy-coloring.png'],
+  ['Victorian jewelry casket', 'Victorian collection · circa 1890', 'A velvet-lined keepsake box with gilt filigree earrings.', '/victorian-cat-1.png'],
+  ['Violet eau de parfum', 'Victorian collection · circa 1900', 'A jewel-like amber bottle dressed with violets and a satin bow.', '/victorian-cat-2.png'],
+  ['Rose cameo portrait', 'Victorian collection · circa 1885', 'An ivory cameo framed in warm gilt and surrounded by crimson roses.', '/victorian-cat-3.png'],
 ] as const
 
 const stickerNames = ['Botanical sprig', 'Perfume bottle', 'Paris label', 'Victorian rose']
