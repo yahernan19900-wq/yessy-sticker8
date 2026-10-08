@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
@@ -154,7 +154,10 @@
   }
 }
 
-.font-display { font-family: 'Playfair Display', Georgia, serif; }
+.font-display { font-family: 'Berkshire Swash', 'Playfair Display', Georgia, serif; font-weight: 400; }
+.sticker-collection .brand, .sticker-collection h1, .sticker-collection h2, .sticker-collection h3, .sticker-collection .journal-page p:first-child { letter-spacing: .01em; }
+.sticker-collection h1, .sticker-collection h2, .sticker-collection h3 { line-height: 1.08; }
+.sticker-collection h1 em { font-family: 'Berkshire Swash', cursive; font-style: normal; }
 
 .vintage-page {
   background-color: #f5eddf;
@@ -184,6 +187,19 @@
 .vintage-page section[id="about"] > div:first-child > div { background: #d8b36a; box-shadow: 8px 8px 0 #7e2330; border-radius: .35rem; }
 .vintage-page footer { border-color: rgba(126, 35, 48, .3); }
 
+.sticker-collection { background-color: #eee0c4; background-image: radial-gradient(rgba(104, 67, 39, .12) .7px, transparent .7px), linear-gradient(90deg, rgba(255,255,255,.22), transparent 35%, rgba(126,35,48,.06)); background-size: 6px 6px, 100% 100%; }
+.sticker-collection header { background: rgba(248,240,223,.48); border-bottom: 2px solid #7e2330; }
+.sticker-collection .product-card { background: #f8f0df; border: 0; box-shadow: 5px 7px 0 rgba(126,35,48,.17), inset 0 0 0 1px rgba(126,35,48,.18); position: relative; transform: rotate(-1deg); }
+.sticker-collection .product-card:nth-child(2n) { transform: rotate(1.25deg); }
+.sticker-collection .product-card:nth-child(3n) { transform: rotate(-.35deg); }
+.sticker-collection .product-card:before { background: rgba(216,169,93,.78); content: ''; height: 1.2rem; left: 50%; opacity: .72; position: absolute; top: -.65rem; transform: translateX(-50%) rotate(-3deg); width: 4.2rem; z-index: 2; }
+.sticker-collection .product-card:nth-child(2n):before { transform: translateX(-50%) rotate(5deg); }
+.sticker-collection .jewel { background: #e7d6b9; border: 8px solid #fffaf0; box-shadow: inset 0 0 0 1px rgba(126,35,48,.24); }
+.sticker-collection .jewel:after { border: 1px dashed rgba(126,35,48,.42); inset: .8rem; }
+.sticker-collection .product-card h3 { color: #7e2330; }
+.sticker-collection section[id="jewelry"], .sticker-collection section:not([id]) { background: rgba(255,250,240,.22); }
+.sticker-collection section[id="jewelry"] .section-heading h2, .sticker-collection section[id="scrapbook"] .section-heading h2 { text-shadow: 2px 2px 0 #d8a95d; }
+.sticker-collection section[id="scrapbook"] { border-top: 12px double #d8a95d; border-bottom: 12px double #d8a95d; }
 .atelier {
   background-image: radial-gradient(rgba(126, 35, 48, .1) .6px, transparent .6px), linear-gradient(115deg, rgba(255,255,255,.2), transparent 45%);
   background-size: 6px 6px, 100% 100%;

@@ -83,7 +83,7 @@ export default function Page() {
   const resetJournal = () => setPlaced([])
 
   return (
-    <main className="atelier min-h-screen overflow-hidden bg-[#ede2cf] text-[#30231f]">
+    <main className="atelier sticker-collection min-h-screen overflow-hidden bg-[#ede2cf] text-[#30231f]">
       <header className="relative z-20 mx-auto flex max-w-7xl items-center justify-between border-b border-[#7e2330]/30 px-6 py-5 lg:px-10">
         <a href="#top" className="brand font-display text-xl font-semibold tracking-[.08em]" aria-label="Yessy's Vintage Finds home">Yessy&apos;s <span>Vintage Finds</span></a>
         <nav className={`${menuOpen ? 'flex' : 'hidden'} absolute left-5 right-5 top-20 flex-col gap-5 border border-[#7e2330]/20 bg-[#f8f0df] p-6 shadow-xl md:static md:flex md:flex-row md:items-center md:gap-8 md:border-0 md:bg-transparent md:p-0 md:shadow-none`}>
