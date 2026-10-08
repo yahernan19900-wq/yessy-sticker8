@@ -187,7 +187,7 @@
 .vintage-page section[id="about"] > div:first-child > div { background: #d8b36a; box-shadow: 8px 8px 0 #7e2330; border-radius: .35rem; }
 .vintage-page footer { border-color: rgba(126, 35, 48, .3); }
 
-.promo-simple .promo-proof, .promo-simple .promo-archive, .promo-simple #scrapbook, .promo-simple .promo-about { display: none; }
+.promo-simple .promo-proof, .promo-simple .promo-archive, .promo-simple #scrapbook { display: none; }
 .promo-simple #jewelry { padding-top: 3rem; }
 .promo-simple footer { margin-top: 2rem; }
 .sticker-collection { background-color: #eee0c4; background-image: radial-gradient(rgba(104, 67, 39, .12) .7px, transparent .7px), linear-gradient(90deg, rgba(255,255,255,.22), transparent 35%, rgba(126,35,48,.06)); background-size: 6px 6px, 100% 100%; }
