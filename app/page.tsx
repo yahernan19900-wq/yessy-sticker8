@@ -23,6 +23,10 @@ const archiveImages = [
   ['The winter portrait', 'A Victorian figure in a high-collared velvet dress against frosted trees.', 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/yess_27737_Create_a_Victorian_fashion_sticker_featuring_a_wom_df92d695-5a4e-46d0-b432-d28e6f2a1bef_2%20%281%29-f84YPXvchIfMUlTsJYzIf2DyDqR9pP.png'],
   ['Burgundy profile', 'A richly layered gown framed by a pale, snowy forest.', 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/yess_27737_Create_a_Victorian_fashion_sticker_featuring_a_wom_df92d695-5a4e-46d0-b432-d28e6f2a1bef_0%20%281%29-FjxYivwXbiM8MK4MyKCvigafUSieDB.png'],
   ['Snowfall silhouette', 'A graceful rear view of the velvet dress with a crisp sticker edge.', 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/yess_27737_Create_a_Victorian_fashion_sticker_featuring_a_wom_df92d695-5a4e-46d0-b432-d28e6f2a1bef_1%20%281%29-DRgp8FI1PXIQseNpU1iqDMWkWqJKs3.png'],
+  ['Winter bride', 'An ivory satin gown and lace cape beneath snow-laden birch trees.', 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/yess_27737_Design_a_Victorian_fantasy_sticker_of_an_elegant_w_e2efebe7-dc3e-4ad9-afcc-240a48c00296_3-YnN1Ytq7sRI8ZsiOxXao80OmB6r4DZ.png'],
+  ['Birchwood bride', 'A crowned figure in a long embroidered cape walking through a pale winter grove.', 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/yess_27737_Design_a_Victorian_fantasy_sticker_of_an_elegant_w_e2efebe7-dc3e-4ad9-afcc-240a48c00296_2-Xp2O5trpVwaoHWw7nntienCoF9fXVm.png'],
+  ['Frosted lace', 'An elegant white lace cloak glowing among crystalline branches.', 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/yess_27737_Design_a_Victorian_fantasy_sticker_of_an_elegant_w_e2efebe7-dc3e-4ad9-afcc-240a48c00296_0-pSuXwvX0HT1sLNBS0VZ2pqLdbonwVH.png'],
+  ['Ivory procession', 'A warm winter portrait of a jeweled gown framed by snow-dusted trees.', 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/yess_27737_Design_a_Victorian_fantasy_sticker_of_an_elegant_w_e2efebe7-dc3e-4ad9-afcc-240a48c00296_1-f6Xy0sofuJOB1IbMQYy0WSaOpjAJyB.png'],
 ] as const
 
 export default function Page() {
