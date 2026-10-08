@@ -4,9 +4,9 @@ import { useState } from 'react'
 import { ArrowDown, ArrowUpRight, Menu, RotateCcw, Sparkles, X } from 'lucide-react'
 
 const jewelry = [
-  ['Victorian jewelry casket', 'Victorian collection · circa 1890', 'A velvet-lined keepsake box with gilt filigree earrings.', 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/yess_27737_Create_an_original_vintage_Avon-inspired_die-cut_s_64306f31-34e5-4ebd-b4ae-93fbf3020ecb_0-HHrZ88qOfGFZ8AFonn5oOe8JraJmnZ.png'],
-  ['Violet eau de parfum', 'Victorian collection · circa 1900', 'A jewel-like amber bottle dressed with violets and a satin bow.', 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/yess_27737_Design_a_vintage_beauty_collectible_sticker_featur_01de2601-3f08-48d9-8bf6-319a0585b4b5_1-P2NybNs3Wc6CqXcqlD5HxDt7L24id7.png'],
-  ['Rose cameo portrait', 'Victorian collection · circa 1885', 'An ivory cameo framed in warm gilt and surrounded by crimson roses.', 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/yess_27737_reate_a_romantic_vintage_sticker_featuring_an_ivor_f3b9c688-40b9-4683-908c-7ea6a2800cdd_0-GDCbjmd8UqJ98FYC6Hwe2MS8XorWaU.png'],
+  ['Victorian jewelry casket', 'Victorian collection · circa 1890', 'A velvet-lined keepsake box with gilt filigree earrings.', '/yessy-hero.png'],
+  ['Violet eau de parfum', 'Victorian collection · circa 1900', 'A jewel-like amber bottle dressed with violets and a satin bow.', '/yessy-stickers.png'],
+  ['Rose cameo portrait', 'Victorian collection · circa 1885', 'An ivory cameo framed in warm gilt and surrounded by crimson roses.', '/yessy-coloring.png'],
 ] as const
 
 const stickerNames = ['Botanical sprig', 'Perfume bottle', 'Paris label', 'Victorian rose']
