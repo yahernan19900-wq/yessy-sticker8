@@ -31,7 +31,7 @@ export default function Page() {
   const visibleStickers = useMemo(() => activeCollection === 'All adventures' ? stickers : stickers.filter((item) => item.category === activeCollection), [activeCollection])
 
   return (
-    <main className="min-h-screen overflow-hidden bg-[#fffaf2] text-[#1d2453]">
+    <main className="vintage-page min-h-screen overflow-hidden bg-[#f5eddf] text-[#392b25]">
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
         <header className="flex items-center justify-between border-b border-[#1d2453]/15 py-5">
           <a href="#top" className="font-display text-xl font-bold tracking-tight" aria-label="Yessy's Creative Studio home">Yessy&apos;s <span className="text-[#ed6d9a]">Creative Studio</span></a>

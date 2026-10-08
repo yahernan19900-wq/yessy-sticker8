@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
@@ -154,7 +154,35 @@
   }
 }
 
-.font-display { font-family: 'Fraunces', Georgia, serif; }
+.font-display { font-family: 'Playfair Display', Georgia, serif; }
+
+.vintage-page {
+  background-color: #f5eddf;
+  background-image: radial-gradient(rgba(92, 55, 37, .08) .7px, transparent .7px), linear-gradient(90deg, rgba(126, 35, 48, .035), transparent 18%, transparent 82%, rgba(126, 35, 48, .035));
+  background-size: 7px 7px, 100% 100%;
+  color: #392b25;
+}
+
+.vintage-page header { border-color: rgba(126, 35, 48, .3); }
+.vintage-page header a, .vintage-page h1, .vintage-page h2, .vintage-page h3, .vintage-page footer span:first-child { letter-spacing: .015em; }
+.vintage-page h1, .vintage-page h2 { text-transform: none; }
+.vintage-page section { border-color: rgba(126, 35, 48, .28); }
+.vintage-page section[id="top"] > div:first-child > p,
+.vintage-page section[id="stickers"] > div:first-child p,
+.vintage-page section[id="coloring"] p:first-child,
+.vintage-page section[id="about"] p:first-child { color: #8a2637; letter-spacing: .24em; }
+.vintage-page section[id="top"] > div:first-child > p { background: #d8b36a; color: #392b25; border-radius: .15rem; box-shadow: 3px 3px 0 rgba(126, 35, 48, .25); }
+.vintage-page section[id="top"] h1 span { color: #8a2637; }
+.vintage-page section[id="top"] a { background: #7e2330; border-radius: .2rem; box-shadow: 4px 4px 0 #d8b36a; }
+.vintage-page section[id="top"] > div:last-child { border-color: #fffaf0; border-radius: .35rem; box-shadow: 8px 12px 0 #d8b36a; }
+.vintage-page section[id="top"] > div:last-child span { border-radius: .2rem; background: #7e2330; }
+.vintage-page section[id="top"] > div:last-child span:last-child { background: #55705b; }
+.vintage-page section[id="stickers"] button { color: #392b25; }
+.vintage-page section[id="stickers"] button > div { border-radius: .35rem; background: #d8b36a; box-shadow: 4px 6px 0 rgba(126, 35, 48, .2); }
+.vintage-page section[id="stickers"] button span, .vintage-page section[id="stickers"] button svg { color: #8a2637; }
+.vintage-page section[id="coloring"] { background: #392b25; border: 1px solid #7e2330; border-radius: .35rem; box-shadow: 8px 8px 0 #d8b36a; }
+.vintage-page section[id="about"] > div:first-child > div { background: #d8b36a; box-shadow: 8px 8px 0 #7e2330; border-radius: .35rem; }
+.vintage-page footer { border-color: rgba(126, 35, 48, .3); }
 
 @layer base {
   * {
