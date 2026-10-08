@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ArrowDown, ArrowUpRight, Menu, RotateCcw, Sparkles, X } from 'lucide-react'
 
 const jewelry = [
@@ -82,6 +82,15 @@ export default function Page() {
   const addSticker = (name: string) => setPlaced((items) => items.includes(name) ? items : [...items, name])
   const resetJournal = () => setPlaced([])
 
+  useEffect(() => {
+    if (!selectedItem) return
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setSelectedItem(null)
+    }
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [selectedItem])
+
   return (
     <main className="atelier sticker-collection min-h-screen overflow-hidden bg-[#ede2cf] text-[#30231f]">
       <header className="relative z-20 mx-auto flex max-w-7xl items-center justify-between border-b border-[#7e2330]/30 px-6 py-5 lg:px-10">
@@ -101,7 +110,7 @@ export default function Page() {
 
       <section id="jewelry" className="mx-auto max-w-7xl px-6 py-20 lg:px-10"><div className="section-heading"><div><p className="eyebrow">The Victorian sticker collection</p><h2 className="font-display">Die-cut ladies in emerald velvet.</h2></div><p>A quartet of luxurious Victorian portrait stickers, made for winter journals, gift wrap, and collectors of beautiful paper curiosities.</p></div><div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{jewelry.map(([name, meta, description, image], index) => <article className="product-card" key={name}><div className={`jewel jewel-${index + 1}`}><img src={image} alt={name} /></div><p className="eyebrow mt-5">{meta}</p><h3 className="font-display mt-2 text-2xl">{name}</h3><p className="mt-2 text-sm leading-6 text-[#624b42]">{description}</p><button type="button" onClick={() => setSelectedItem([name, meta, description, image])} className="mt-5 text-xs font-bold uppercase tracking-[.18em] text-[#7e2330] underline underline-offset-4">View details</button></article>)}</div></section>
 
-      {selectedItem && <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#30231f]/70 p-6" role="dialog" aria-modal="true" aria-labelledby="item-detail-title"><div className="relative grid max-w-2xl gap-6 bg-[#f8f0df] p-5 shadow-2xl sm:grid-cols-2"><button type="button" onClick={() => setSelectedItem(null)} className="absolute right-3 top-3 rounded-full bg-[#f8f0df] p-2 text-[#7e2330]" aria-label="Close item details"><X /></button><img src={selectedItem[3]} alt={selectedItem[0]} className="h-full min-h-64 w-full object-cover" /><div className="flex flex-col justify-center pr-4"><p className="eyebrow">{selectedItem[1]}</p><h2 id="item-detail-title" className="font-display mt-3 text-4xl">{selectedItem[0]}</h2><p className="mt-4 leading-7 text-[#624b42]">{selectedItem[2]}</p><button type="button" onClick={() => setSelectedItem(null)} className="button button-primary mt-6 self-start">Close details <X /></button></div></div></div>}
+      {selectedItem && <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#30231f]/70 p-6" role="dialog" aria-modal="true" aria-labelledby="item-detail-title" onClick={() => setSelectedItem(null)}><div className="relative grid max-w-2xl gap-6 bg-[#f8f0df] p-5 shadow-2xl sm:grid-cols-2" onClick={(event) => event.stopPropagation()}><button type="button" onClick={() => setSelectedItem(null)} className="absolute right-3 top-3 rounded-full bg-[#f8f0df] p-2 text-[#7e2330]" aria-label="Close item details"><X /></button><img src={selectedItem[3]} alt={selectedItem[0]} className="h-full min-h-64 w-full object-cover" /><div className="flex flex-col justify-center pr-4"><p className="eyebrow">{selectedItem[1]}</p><h2 id="item-detail-title" className="font-display mt-3 text-4xl">{selectedItem[0]}</h2><p className="mt-4 leading-7 text-[#624b42]">{selectedItem[2]}</p><button type="button" onClick={() => setSelectedItem(null)} className="button button-primary mt-6 self-start">Close details <X /></button></div></div></div>}
 
       <section className="mx-auto max-w-7xl border-t border-[#7e2330]/25 px-6 py-20 lg:px-10"><div className="section-heading"><div><p className="eyebrow">The complete image cabinet</p><h2 className="font-display">Every collected scene, kept together.</h2></div><p>The original atelier studies and the newest winter fashion stickers now live in one growing visual archive.</p></div><div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{archiveImages.map(([name, description, image]) => <article key={name} className="product-card group"><div className="jewel"><img src={image} alt={name} /></div><h3 className="font-display mt-5 text-2xl">{name}</h3><p className="mt-2 text-sm leading-6 text-[#624b42]">{description}</p></article>)}</div></section>
 
